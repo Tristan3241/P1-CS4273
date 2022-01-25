@@ -30,7 +30,7 @@
                             <archive>
                                 <manifest>
                                     <mainClass>
-                                        App
+                                        CSVParser
                                     </mainClass>
                                 </manifest>
                             </archive>
