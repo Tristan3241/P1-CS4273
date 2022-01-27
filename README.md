@@ -9,3 +9,5 @@ Used GitHub Actions and Java with Maven in order to do the testing
 #References for the GitHub Actions:
 https://maven.apache.org/pom.html
 https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
+
+test
