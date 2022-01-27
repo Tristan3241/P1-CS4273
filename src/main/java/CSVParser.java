@@ -22,7 +22,7 @@ public class CSVParser {
 		}
 	}
 
-	private static ArrayList<String> readCsv(File csv) throws FileNotFoundException {
+	public static ArrayList<String> readCsv(File csv) throws FileNotFoundException {
 		Scanner scanner = new Scanner(csv);
 		ArrayList<String> elements = new ArrayList<String>();
 		while (scanner.hasNextLine()) {
