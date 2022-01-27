@@ -1,10 +1,8 @@
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import org.junit.Before;
-
 
 public class TestCSVParser {
   // Tests if the length of the parsed array is equal to what is expected
