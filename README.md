@@ -7,5 +7,5 @@ We also used the AWS lab in order to do the programming for the CSVParser.java a
 
 Used GitHub Actions and Java with Maven in order to do the testing
 #References for the GitHub Actions:
-https://maven.apache.org/pom.html
-https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
+* https://maven.apache.org/pom.html
+* https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
