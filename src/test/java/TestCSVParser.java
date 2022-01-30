@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Test;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.*;
 
 public class TestCSVParser {
   // Tests if the length of the parsed array is equal to what is expected
@@ -31,13 +32,13 @@ public class TestCSVParser {
 	}
 	//Tests if the CSV parser correctly parses the english langage
 	@Test
-	public void parseTestEnglish() throws FileNotFoundException {
+	public void parseTest() throws FileNotFoundException {
 		CSVParser myCSVParser = new CSVParser();
 		File csv = new File("alphabets.csv");
 		ArrayList<String> actual = myCSVParser.readCsv(csv);
 		ArrayList<String> expected = new ArrayList<String>(
-			Arrays.asList("English", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"));
-		assertArrayEquals(expected, actual);
+			Arrays.asList("English", " A", " B", " C", " D", " E", " F", " G", " H", " I", " J", " K", " L", " M", " N", " O", " P", " Q", " R", " S", " T", " U", " V", " W", " X", " Y", " Z", "Spanish", " A", " B", " C", " D", " E", " F", " G", " H", " I", " J", " K", " L", " M", " N", " Ñ", " O", " P", " Q", " R", " S", " T", " U", " V", " W", " X", " Y", " Z"));
+		assertArrayEquals(expected.toArray(), actual.toArray());
 		
 		
 	}
