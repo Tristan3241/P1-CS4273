@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Test;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.*;
 
 public class TestCSVParser {
   // Tests if the length of the parsed array is equal to what is expected
