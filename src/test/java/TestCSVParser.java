@@ -29,4 +29,16 @@ public class TestCSVParser {
 		ArrayList<String> actual = myCSVParser.readCsv(csv);
 		assertFalse(actual.isEmpty());
 	}
+	//Tests if the CSV parser correctly parses the english langage
+	@Test
+	public void parseTestEnglish() throws FileNotFoundException {
+		CSVParser myCSVParser = new CSVParser();
+		File csv = new File("alphabets.csv");
+		ArrayList<String> actual = myCSVParser.readCsv(csv);
+		ArrayList<String> expected = new ArrayList<String>(
+			Arrays.asList(English, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z);
+		assertArrayEquals(expected, actual);
+		
+		
+	}
 }
