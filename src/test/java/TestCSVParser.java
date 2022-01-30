@@ -36,7 +36,7 @@ public class TestCSVParser {
 		File csv = new File("alphabets.csv");
 		ArrayList<String> actual = myCSVParser.readCsv(csv);
 		ArrayList<String> expected = new ArrayList<String>(
-			Arrays.asList(English, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z);
+			Arrays.asList(English, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z));
 		assertArrayEquals(expected, actual);
 		
 		
